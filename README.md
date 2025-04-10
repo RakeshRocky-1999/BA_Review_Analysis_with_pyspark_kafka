@@ -9,6 +9,9 @@ This project is an end-to-end NLP pipeline that performs sentiment analysis and 
 ![Gradio](https://img.shields.io/badge/UI-Gradio-blue?logo=gradio)
 ![License](https://img.shields.io/github/license/RakeshRocky-1999/Review_Analyser_Sentiment_Rating)
 
+### 🎥 Demo
+[![Watch the demo](
+
 ## 🚀 Project Highlights
 
 - ✅ **Web Scraping**: Reviews scraped from British Airways website.
