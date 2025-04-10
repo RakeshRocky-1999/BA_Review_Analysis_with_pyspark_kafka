@@ -1,0 +1,44 @@
+# Core
+pandas
+numpy
+requests
+beautifulsoup4
+scikit-learn
+python-dotenv
+contractions
+nltk
+
+
+# Spark and kafka
+pyspark
+kafka-python
+
+# LLMs & Transformers
+transformers
+sentence-transformers
+
+# LangChain
+langchain
+langchain-community
+langchain-huggingface
+
+
+# Backend API
+fastapi
+uvicorn
+
+# Frontend
+streamlit
+
+# Model Serving (optional, for later deployment)
+huggingface-hub
+
+# Typing / validation
+pydantic
+
+# If needed for JSON formatting from LangChain outputs
+python-dotenv
+
+
+
+
