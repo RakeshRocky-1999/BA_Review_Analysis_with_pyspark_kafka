@@ -74,5 +74,14 @@ graph TD
 
 📡 **Kafka Flow**:
 
+## 🧠 Models Used
+- `nlptown/bert-base-multilingual-uncased-sentiment` — ⭐ Rating (1 to 5)
+- `Custom logic` — Maps ratings to sentiment (positive, neutral, negative)
 
+## 📡 Kafka Live Prediction (CLI-based)
+- 1. Producer accepts typed input
+- 2. Kafka sends to consumer
+- 3. Consumer cleans → predicts rating → derives sentiment
+
+✅ Output seen instantly in terminal!
 
