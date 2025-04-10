@@ -3,6 +3,11 @@
 This project is an end-to-end NLP pipeline that performs sentiment analysis and rating prediction (1 to 5 stars) on customer reviews for British Airways using Spark, Kafka, and a Hugging Face Transformer (BERT LLM model). The system cleans the text data, processes it using a Spark pipeline, streams live reviews through Kafka, and delivers predictions in real time. The final deployment is hosted using Gradio for public interaction.
 
 ---
+![Spark](https://img.shields.io/badge/Spark-Enabled-orange?logo=apache-spark)
+![Kafka](https://img.shields.io/badge/Kafka-Streaming-black?logo=apache-kafka)
+![LLM](https://img.shields.io/badge/LLM-HuggingFace-yellow?logo=huggingface)
+![Gradio](https://img.shields.io/badge/UI-Gradio-blue?logo=gradio)
+![License](https://img.shields.io/github/license/RakeshRocky-1999/Review_Analyser_Sentiment_Rating)
 
 ## 🚀 Project Highlights
 
