@@ -97,4 +97,50 @@ graph TD
 **🔗 Live App:**
 👉 [Try the Deployed Web App](https://rakeshrocky-1999.github.io/Review_Analyser_Sentiment_Rating/)
 
+App
 
+## 🧪 Try Locally
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Run Spark Preprocessing
+python main_spark_preprocessing.py
+
+# Run Sentiment & Rating Predictions
+python llm_model/sentiment_analysis.py
+
+# Start Kafka (ensure Zookeeper & broker are up)
+python kafka_producer.py
+python kafka_consumer.py
+
+```
+
+## 🛠 Tech Stack
+- 🔥 PySpark
+- 📦 Apache Kafka
+- 🤗 Hugging Face Transformers
+- ✨ Gradio + HTML Styling
+- 🧹 NLTK, regex, contractions
+- 📊 Pandas, tqdm
+- 🤝 Author
+
+## ✅ Conclusion
+
+This project showcases a complete end-to-end pipeline—from data extraction to real-time prediction and deployment. By combining web scraping, Apache Spark, Kafka, custom NLP preprocessing, and LLM-based sentiment analysis, we built a powerful and scalable review analysis system.
+
+**Key achievements:**
+
+- ✅ Scraped over 4000 British Airways reviews for real data
+
+- ✅ Built a robust Spark pipeline for preprocessing using custom NLP techniques
+
+- ✅ Streamed live reviews using Kafka for real-time predictions
+
+- ✅ Predicted both ratings and sentiments using state-of-the-art LLMs
+
+- ✅ Developed a clean and responsive frontend using Gradio
+
+- ✅ Deployed the app publicly on Hugging Face Spaces for easy accessibility
+
+This project demonstrates not only technical implementation but also real-world applicability of a complete ETL + NLP + Deployment pipeline, suitable for production-grade sentiment analysis systems.
