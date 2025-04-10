@@ -9,8 +9,6 @@ This project is an end-to-end NLP pipeline that performs sentiment analysis and 
 ![Gradio](https://img.shields.io/badge/UI-Gradio-blue?logo=gradio)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
-### 🎥 Demo
-[![Watch the demo](
 
 ## 🚀 Project Highlights
 
@@ -84,4 +82,19 @@ graph TD
 - 3. Consumer cleans → predicts rating → derives sentiment
 
 ✅ Output seen instantly in terminal!
+
+## 🌐 Web Deployment with Gradio
+**The app allows users to:**
+
+- Type their review ✍️
+
+- See the cleaned version 🧼
+
+- View sentiment with emoji and color 😊😐😠
+
+- View a star-based rating ⭐⭐⭐⭐☆
+
+**🔗 Live App:**
+👉 [Try the Deployed Web App](https://rakeshrocky-1999.github.io/Review_Analyser_Sentiment_Rating/)
+
 
