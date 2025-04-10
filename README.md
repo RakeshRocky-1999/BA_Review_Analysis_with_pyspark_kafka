@@ -41,8 +41,11 @@ This project is an end-to-end NLP pipeline that performs sentiment analysis and 
 
 graph TD
 A[📝 Raw Reviews] --> B[🔄 Spark Preprocessing]
+
 B --> C[📦 Cleaned Data CSV]
+
 C --> D[🧠 LLM Model Prediction]
+
 D --> E[📊 Rating & Sentiment Output]
 
 
