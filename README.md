@@ -1,6 +1,6 @@
 # ✈️ British Airways Review Analyser — Sentiment & Rating with LLM
 
-This end-to-end NLP project takes user reviews of British Airways, cleans them using Spark, analyzes them with LLM models, predicts sentiment and rating, and displays results through both Kafka-streamed CLI and a beautiful Gradio-based web app!
+This project is an end-to-end NLP pipeline that performs sentiment analysis and rating prediction (1 to 5 stars) on customer reviews for British Airways using Spark, Kafka, and a Hugging Face Transformer (BERT LLM model). The system cleans the text data, processes it using a Spark pipeline, streams live reviews through Kafka, and delivers predictions in real time. The final deployment is hosted using Gradio for public interaction.
 
 ---
 
@@ -10,7 +10,7 @@ This end-to-end NLP project takes user reviews of British Airways, cleans them u
 - ✅ **Data Cleaning**: Preprocessing with custom NLTK pipeline using Spark UDF.
 - ✅ **ETL Process**: Extract → Clean (Transform) → Predict (Load).
 - ✅ **Real-Time Streaming**: Kafka-based pipeline for live reviews and CLI predictions.
-- ✅ **LLM Model Integration**: Used Hugging Face Transformers for rating and sentiment.
+- ✅ **LLM Model Integration**: Used Hugging Face Transformers(BERT) for rating and sentiment.
 - ✅ **Deployment**: Frontend deployed on Hugging Face Spaces via Gradio UI.
 
 ---
@@ -34,3 +34,33 @@ This end-to-end NLP project takes user reviews of British Airways, cleans them u
 │   ├── cleaned_reviews.csv
 │   ├── raw_data_prediction.csv
 │   └── kafka_predicted_reviews.csv
+
+```
+
+## 🔄 ETL Pipeline Overview
+
+graph TD
+A[📝 Raw Reviews] --> B[🔄 Spark Preprocessing]
+B --> C[📦 Cleaned Data CSV]
+C --> D[🧠 LLM Model Prediction]
+D --> E[📊 Rating & Sentiment Output]
+
+
+### 🟢 Extract
+- Scraped reviews from British Airways website using `BeautifulSoup` and `requests`.
+
+### 🟡 Transform
+- Applied Spark-based preprocessing:
+  - Custom UDF: stopword removal, contraction expansion, lemmatization, and Unicode normalization.
+  - Removed irrelevant phrases like "Trip Verified", digits, and special characters.
+- Streamed live reviews via **Kafka producer**, processed in real-time by **Kafka consumer**.
+
+### 🔵 Load
+- Batch cleaned data saved to `data/cleaned_reviews.csv`.
+- Real-time predictions stored in `data/kafka_predicted_reviews.csv`.
+- Final sentiment and rating outputs stored in `data/final_predictions.csv`.
+
+📡 **Kafka Flow**:
+
+
+
