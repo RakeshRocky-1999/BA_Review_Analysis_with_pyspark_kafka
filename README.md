@@ -40,13 +40,14 @@ This project is an end-to-end NLP pipeline that performs sentiment analysis and 
 ## 🔄 ETL Pipeline Overview
 
 graph TD
-A[📝 Raw Reviews] --> B[🔄 Spark Preprocessing]
 
-B --> C[📦 Cleaned Data CSV]
+**A**[📝 Raw Reviews] **--> B**[🔄 Spark Preprocessing]
 
-C --> D[🧠 LLM Model Prediction]
+**B --> C**[📦 Cleaned Data CSV]
 
-D --> E[📊 Rating & Sentiment Output]
+**C --> D**[🧠 LLM Model Prediction]
+
+**D --> E**[📊 Rating & Sentiment Output]
 
 
 ### 🟢 Extract
