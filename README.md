@@ -1,4 +1,4 @@
-# ✈️ British Airways Review Analyser — Sentiment & Rating with LLM
+# ✈️ British Airways Review Analyzer — Sentiment & Rating with LLM
 
 This project is an end-to-end NLP pipeline that performs sentiment analysis and rating prediction (1 to 5 stars) on customer reviews for British Airways using Spark, Kafka, and a Hugging Face Transformer (BERT LLM model). The system cleans the text data, processes it using a Spark pipeline, streams live reviews through Kafka, and delivers predictions in real time. The final deployment is hosted using Gradio for public interaction.
 
