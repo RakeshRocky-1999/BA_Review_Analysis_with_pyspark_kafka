@@ -10,7 +10,11 @@ This project is an end-to-end NLP pipeline that performs sentiment analysis and 
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
 🎥 **Demo Video**: [Watch the project demo here](https://drive.google.com/file/d/1HseD21BFZwxKPF2oHNf9ZQuSEDZPkRrJ/view?usp=sharing)
+
 🌐 **Try it Live**: [Click here to access the deployed app](https://rakeshrocky-1999.github.io/Review_Analyser_Sentiment_Rating/)
+
+
+![ReviewAnalyzer-Gif](https://github.com/user-attachments/assets/2a3b2468-9a84-43a2-8047-dc65f11cce7d)
 
 
 ## 🚀 Project Highlights
