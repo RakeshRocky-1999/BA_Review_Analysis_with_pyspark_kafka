@@ -9,7 +9,8 @@ This project is an end-to-end NLP pipeline that performs sentiment analysis and 
 ![Gradio](https://img.shields.io/badge/UI-Gradio-blue?logo=gradio)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
-![image](https://github.com/user-attachments/assets/ade963a0-b9da-40b1-ad76-3066ddaf89af)
+🎥 **Demo Video**: [Watch the project demo here](https://drive.google.com/file/d/1HseD21BFZwxKPF2oHNf9ZQuSEDZPkRrJ/view?usp=sharing)
+
 
 ## 🚀 Project Highlights
 
